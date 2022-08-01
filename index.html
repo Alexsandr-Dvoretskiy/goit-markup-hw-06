@@ -82,11 +82,59 @@
 				<button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
 				<div class="backdrop is-hidden" data-modal>
 					<div class="modal">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste dolores sequi reprehenderit,
-							temporibus incidunt voluptate non, magni molestias, expedita quia beatae. Sint obcaecati possimus iure
-							impedit, explicabo non rem.
-						</p>
+						<form class="form">
+							<b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+							<div class="form-field">
+								<label for="name">Имя</label>
+								<input type="text"
+								name="name"
+								id="name" class="modal-input">
+								
+									<svg class="form-svg">
+										<use href="./images/sprite2.svg#icon-person-black"></use>
+									</svg>
+								
+								
+							</div>
+							<div class="form-field">
+								<label for="tel">Телефон</label>
+									<input type="tel" name="tel" id="tel" placeholder=" " />
+									<svg class="form-svg">
+										<use href="./images/sprite2.svg#icon-phone-black"></use>
+									</svg>
+							</div>
+							<div class="form-field">
+								<label for="mail">Почта</label>
+								<input type="email" name="mail" id="mail" placeholder=" " />
+								<svg class="form-svg">
+									<use href="./images/sprite2.svg#icon-email-black"></use>
+								</svg>
+							  </div>
+
+							  <div class="form-field">
+								<label for="comment">Коментарий</label>
+								<textarea
+								  class="comment"
+								  name="comment"
+								  id="comment"
+								  rows="8"
+								  placeholder="Введите текст "
+								></textarea>
+							  </div>
+
+							  <div class="form-checkbox">
+								<input type="checkbox" name="policy" id="policy" />
+								<label for="policy">Соглашаюсь с рассылкой и принимаю 
+									 <a href="">Условия договора</a>
+								</label>
+							  </div>
+						
+							  <button type="submit" class="button-form">Отправить</button>
+						
+
+							
+							
+						</form>
 						<button class="button-close" data-modal-close>
 							<svg class="button-svg">
 								<use href="./images/sprite.svg#icon-close"></use>
@@ -438,14 +486,12 @@
 				</div>
 				<div class="fotter-form">
 					<strong class="fotter-strong">Подпишитесь на рассылку</strong>
-					<form>
-						<label for="">
-							<input type="email" name="email" placeholder="E-mail"  />
-
-							
-					<button type="button" class="button-form">Подписаться</button>
-
-						</label>
+					<form class="form-mail">
+						
+						<input type="email" name="email" class="fotter-input"  />
+						<label class="fotter-label">E-mail</label>
+						<button type="button" class="button-fotter">Подписаться
+						</button>
 					</form>
 					
 				</div>
