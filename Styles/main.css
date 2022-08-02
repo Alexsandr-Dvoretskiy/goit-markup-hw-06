@@ -391,7 +391,7 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.checkbox-svg:focus {
+.checkbox:focus .checkbox-svg {
   border-color: #2196f3;
 }
 
