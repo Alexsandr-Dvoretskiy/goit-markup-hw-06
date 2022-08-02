@@ -82,7 +82,7 @@
 				<button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
 				<div class="backdrop is-hidden" data-modal>
 					<div class="modal">
-						<form class="form">
+						<form class="form" autocomplete="off">
 							<b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 							<div class="form-field">
 								<label for="name">Имя</label>
@@ -123,9 +123,10 @@
 							  </div>
 
 							  <div class="form-checkbox">
-								<input class="checkbox" type="checkbox" name="policy" id="policy" />
-								<span class="checkbox-svg"></span>
+								
 								<label for="policy">
+									<input class="checkbox" type="checkbox" name="policy" id="policy" />
+								<span class="checkbox-svg"></span>
 									<span>Соглашаюсь с рассылкой и принимаю </span>
 									
 									
