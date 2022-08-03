@@ -404,6 +404,9 @@ textarea {
   margin-top: 4px;
   cursor: pointer;
 }
+.checkbox-text:focus .checkbox-svg {
+  color: #2196f3;
+}
 
 .checkbox:checked + .checkbox-svg {
   background-color: #188ce8;
@@ -474,6 +477,7 @@ textarea {
   width: 30px;
   height: 30px;
   background-size: cover;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-svg:hover,
 .button-svg:focus {
@@ -495,17 +499,6 @@ textarea {
   bottom: 11px;
   left: 12px;
 }
-/* .form-item {
-  width: 20px;
-  height: 20px;
-}
-/* .form-svg {
-  width: 18px;
-  height: 18px;
-  background-size: contain;
-  background-color: #2196f3;
-} */
-*/
 
 /* section */
 
@@ -901,7 +894,7 @@ textarea {
   left: 16px;
 }
 .fotter-input {
-  padding-left: 5px;
+  padding-left: 16px;
 }
 .fotter-input:focus + .fotter-label {
   color: #ffffff;
